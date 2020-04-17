@@ -25,8 +25,8 @@ class ModifyContact extends Component {
             })
         }
         else{
-        let newMovie = {name: this.state.name, phone: this.state.phone, email: this.state.email}
-        axios.put(`/modify_contact/${value}`, newMovie)
+        let newContact = {name: this.state.name, phone: this.state.phone, email: this.state.email}
+        axios.put(`/modify_contact/${value}`, newContact)
         .then(res => {
             console.log(res.data);
           })
