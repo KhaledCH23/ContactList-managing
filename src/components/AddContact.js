@@ -26,8 +26,8 @@ class AddContact extends Component {
        })
     }
         else{
-            let newMovie = {name: this.state.name, phone: this.state.phone, email: this.state.email}
-            axios.post('/add_contact', newMovie)
+            let newContact = {name: this.state.name, phone: this.state.phone, email: this.state.email}
+            axios.post('/add_contact', newContact)
           .then(res => {
               console.log(res.data);
             })
